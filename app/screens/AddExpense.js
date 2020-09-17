@@ -4,7 +4,7 @@ import {Text, View, StyleSheet} from "react-native";
 function AddExpense(props){
     return (
         <View style={styles.background}>
-           <Text style={styles.slogan}> Add Expense Page </Text>
+           <Text> Add Expense Page </Text>
         </View>    
     );
 }

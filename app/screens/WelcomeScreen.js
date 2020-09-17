@@ -6,10 +6,9 @@ function WelcomeScreen(props){
     return (
         <ImageBackground
            style = {styles.background}
-           source={require("../assets/splitwise_flex.jpg")}
         >
            <View style={styles.logoContainer}>
-              <Image style={styles.logo} source={require("../assets/splitwise.png")}/>
+              <Image style={styles.logo} source={require("../assets/Splitup.jpg")}/>
               <Text style={styles.slogan}> Split your Bills! </Text>
            </View>    
 
@@ -32,29 +31,30 @@ const styles = StyleSheet.create({
     background:{
         flex:1,
         justifyContent: "flex-end",
+        backgroundColor: 'darkslateblue',
         alignItems:"center"
     },
     expenseButton:{
         width:'100%',
         height: 70,
-        backgroundColor: "aquamarine"
+        backgroundColor: "mediumslateblue"
     },
     expenseButtonText:{
         fontFamily: 'serif',
         fontSize:30,
-        color:"slategray",
+        color:"darkslateblue",
         top: 10,
         left: 70
     },
     expenseButton2:{
         width:'100%',
         height: 70,
-        backgroundColor: "aquamarine"
+        backgroundColor: "mediumslateblue"
     },
     expenseButtonText2:{
         fontFamily: 'serif',
         fontSize:30,
-        color:"slategray",
+        color:"darkslateblue",
         top: 10,
         left: 90
     },
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     slogan:{
         fontFamily: 'serif',
         fontSize:40,
-        color:"slategray"
+        color:"mediumslateblue"
     }
 });
 
