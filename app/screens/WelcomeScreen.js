@@ -1,30 +1,55 @@
 import React from  "react";
 import {ImageBackground, Text, View, StyleSheet, Image, TouchableOpacity} from "react-native";
+import * as Permissions from "expo-permissions";
 
-function WelcomeScreen(props){
-    const { navigation } = props
-    return (
-        <ImageBackground
-           style = {styles.background}
-        >
-           <View style={styles.logoContainer}>
-              <Image style={styles.logo} source={require("../assets/Splitup.jpg")}/>
-              <Text style={styles.slogan}> Split your Bills! </Text>
-           </View>    
 
-           <TouchableOpacity
-              style={styles.expenseButton}
-              onPress={() => navigation.navigate('AddExpense')}>
-              <Text style={styles.expenseButtonText}>Add New Expense</Text>
-            </TouchableOpacity>
+class WelcomeScreen extends React.Component{
+    constructor(props) {
+        super(props)
+    }
 
-            <TouchableOpacity
-              style={styles.expenseButton2}
-              onPress={() => navigation.navigate('Dashboard')}>
-              <Text style={styles.expenseButtonText2}>View Expenses</Text>
-            </TouchableOpacity>
-        </ImageBackground>
-    );
+    getAudioPermission = async() => {
+        const { status: existingStatus } = await Permissions.getAsync(Permissions.AUDIO_RECORDING);
+        let finalStatus = existingStatus;
+        if (existingStatus !== 'granted') {
+            const { status } = await Permissions.askAsync(Permissions.AUDIO_RECORDING);
+            finalStatus = status;
+        }
+        if (finalStatus !== 'granted') {
+            alert('Failed to get permission for audio recording');
+            return;
+        }
+        console.log(finalStatus);
+    }
+
+    componentDidMount() {
+        this.getAudioPermission();
+    }
+
+    render() {
+        return (
+            <ImageBackground
+               style = {styles.background}
+            >
+               <View style={styles.logoContainer}>
+                  <Image style={styles.logo} source={require("../assets/Splitup.jpg")}/>
+                  <Text style={styles.slogan}> Split your Bills! </Text>
+               </View>    
+    
+               <TouchableOpacity
+                  style={styles.expenseButton}
+                  onPress={() => this.props.navigation.navigate('AddExpense')}>
+                  <Text style={styles.expenseButtonText}>Add New Expense</Text>
+                </TouchableOpacity>
+    
+                <TouchableOpacity
+                  style={styles.expenseButton2}
+                  onPress={() => this.props.navigation.navigate('Dashboard')}>
+                  <Text style={styles.expenseButtonText2}>View Expenses</Text>
+                </TouchableOpacity>
+            </ImageBackground>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
