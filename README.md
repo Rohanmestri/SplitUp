@@ -1,5 +1,5 @@
 # SplitUp
-A Natural Language Processing based expense splitting app
+An expense splitting app powered by Natural Language Processing
 
 
 
