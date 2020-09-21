@@ -8,6 +8,8 @@ An expense splitting hybrid app powered by Natural Language Processing. The app 
 
 [![SplitUP](https://img.youtube.com/vi/BdBLGMfhgiI/0.jpg)](https://youtu.be/BdBLGMfhgiI)
 
+![views](https://img.shields.io/youtube/views/BdBLGMfhgiI?style=social)
+
 ## Setup Instructions
 
 1) Download repo
