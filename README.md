@@ -1,7 +1,8 @@
 # SplitUp
 An expense splitting hybrid app powered by Natural Language Processing. The app is developed using React Native with Expo.
 
-
+![MIT license](https://img.shields.io/github/license/Rohanmestri/SplitUp)
+![Issues](https://img.shields.io/github/issues/Rohanmestri/SplitUp?logo=github)
 
 ## App preview video
 
