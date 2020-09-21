@@ -5,6 +5,7 @@ import { TextInput } from 'react-native-gesture-handler';
 import {WelcomeScreen} from '../screens/WelcomeScreen'
 import firebase from '../firebase/config';
 
+
 class LoginScreen extends Component {
   constructor(props){
     super(props);
@@ -25,7 +26,7 @@ class LoginScreen extends Component {
       .then(res => {console.log(res.user.email); this.props.navigation.navigate('WelcomeScreen');});
     } catch (error) {
       console.log(error.toString(error));
-      this.props.navigation.navigate('WelcomeScreen');
+      Alert.alert('Invalid Email ID or password');
     }
   }
 

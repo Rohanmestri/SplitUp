@@ -1,7 +1,6 @@
 import React from  "react";
 import {Text, View, StyleSheet, TextInput, TouchableOpacity, Dimensions, Alert} from "react-native";
-// import firebase from '../firebase/config';
-import * as firebase from 'firebase';
+import firebase from '../firebase/config';
 
 const {width, height} = Dimensions.get('window');
 
@@ -24,11 +23,9 @@ class AddExpense extends React.Component{
                 user: this.user.uid,
             })
         }).then((res) => res.json)
-        .then((json) => console.log(json))
-        .then(() => {
-            Alert.alert('Expense added');
-            this.props.navigation.goBack();
-        })
+        .catch(error => console.log(error))
+        Alert.alert('Expense added');
+        this.props.navigation.goBack();
     }
 
     render() {

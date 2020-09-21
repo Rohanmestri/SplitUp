@@ -1,0 +1,12 @@
+grocery - personal
+movie - personal
+dinner - personal
+lunch - personal
+cab - travel
+taxi - travel
+food - personal
+furniture - personal
+rent - amenity
+pet food - personal
+gas bill - amenity
+water bill - amenity
