@@ -27,7 +27,7 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 - [Endless Scope](#endless-scope)
 
 ## Awesome Tech Stack
-React Native(Javascript), Python (NLTK, Tensorflow, etc), NLP(entity extraction, voice recognition), REST API, firebase
+React Native(Javascript), Python (NLTK, Flask, Tensorflow, etc), NLP(entity extraction, voice recognition), REST API, firebase
 
 ## Clear, Quantifiable and Testable Hypothesis
  Hypothesis: As a result of the voice recognition feature, SplitUp is faster at expense recording than
