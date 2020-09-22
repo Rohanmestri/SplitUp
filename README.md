@@ -21,7 +21,7 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 <img src="images/why_us.png" alt="logo" width="150" align="right"/>
 
 ## Why choose this project?
-- [Awsome Tech Stack](#markdown-header-awsome-tech-stack)
+- [Awsome Tech Stack](#awsome-tech-stack)
 - Clear, Quantifiable and Testable Hypothesis
 - Realistic Roadmap
 - Endless Scope
