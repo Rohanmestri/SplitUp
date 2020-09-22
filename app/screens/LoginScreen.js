@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Alert, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Dimensions, Image } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
 // import * as firebase from 'firebase';
 import {WelcomeScreen} from '../screens/WelcomeScreen'
 import firebase from '../firebase/config';
+
+
+const {width, height} = Dimensions.get('window');
 
 
 class LoginScreen extends Component {
@@ -26,7 +29,6 @@ class LoginScreen extends Component {
       .then(res => {console.log(res.user.email); this.props.navigation.navigate('WelcomeScreen');});
     } catch (error) {
       console.log(error.toString(error));
-      Alert.alert('Invalid Email ID or password');
     }
   }
 
@@ -57,12 +59,12 @@ class LoginScreen extends Component {
           style={styles.loginBtn}
           onPress={() => this.LogIn(this.state.email,this.state.password)}
         >
-          <Text style={styles.loginText}>LOGIN</Text>
+          <Text style={{color:"white"}}>LOGIN</Text>
         </TouchableOpacity>
         <TouchableOpacity 
           onPress={() => this.props.navigation.navigate('SignupScreen')}
         >
-          <Text style={styles.loginText}>Signup</Text>
+          <Text style={{color:"darkslateblue"}}>SIGNUP</Text>
         </TouchableOpacity>
       </View>
     );
@@ -74,21 +76,28 @@ export default LoginScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'darkslateblue',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: Math.floor(height/3),
   },
   logo: {
     position:"absolute",
-    top: 50,
+    top: Math.floor(height/5),
     alignItems: "center",
-    width: 200,
-    height: 200
+    width: Math.floor(height/4),
+    height: Math.floor(height/4),
+    borderRadius:25,
+    borderColor:"darkslateblue",
+    borderWidth:1,
+
   },
   inputView:{
     width:"80%",
-    backgroundColor:"slateblue",
+    backgroundColor:"white",
     borderRadius:25,
+    borderColor:"darkslateblue",
+    borderWidth:5,
     height:50,
     marginBottom:20,
     justifyContent:"center",
@@ -96,7 +105,7 @@ const styles = StyleSheet.create({
   },
   inputText:{
     height:50,
-    color:"white"
+    color:"darkslateblue"
   },
   forgot:{
     color:"white",
@@ -104,7 +113,7 @@ const styles = StyleSheet.create({
   },
   loginBtn:{
     width:"80%",
-    backgroundColor:"mediumslateblue",
+    backgroundColor:"darkslateblue",
     borderRadius:25,
     height:50,
     alignItems:"center",
