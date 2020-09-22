@@ -10,6 +10,7 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 
 ![MIT license](https://img.shields.io/github/license/Rohanmestri/SplitUp)
 ![Issues](https://img.shields.io/github/issues/Rohanmestri/SplitUp?logo=github)
+[![Build Status](https://travis-ci.org/Parth27/SE_Homework1.svg?branch=master)](https://travis-ci.org/Parth27/SE_Homework1)
 
 ## App preview video
 
@@ -17,8 +18,16 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 
 ![views](https://img.shields.io/youtube/views/BdBLGMfhgiI?style=social)
 
+<img src="images/why_us.png" alt="logo" width="150" align="right"/>
+
 ## Why choose this project?
-- This project is suitable for bonus marks because its hypothesis and evaluation are distinct and simple. 
+- Awsome Tech Stac
+- Clear, quantifiable and testable hypothesis
+- Realistic roadmap
+- Endless Scope
+- Considerate Pre-requisites
+
+-This project is suitable for bonus marks because its hypothesis and evaluation are distinct and simple. 
   Hypothesis: As a result of the voice recognition feature, SplitUp is faster at expense recording than
   any other apps currently in the market.
   Evaluation: To evaluate this hypothesis, we will conduct a time analysis on users and calculate the average
