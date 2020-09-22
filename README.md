@@ -10,7 +10,7 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 
 ![MIT license](https://img.shields.io/github/license/Rohanmestri/SplitUp)
 ![Issues](https://img.shields.io/github/issues/Rohanmestri/SplitUp?logo=github)
-[![Build Status](https://travis-ci.org/Parth27/SE_Homework1.svg?branch=master)](https://travis-ci.org/Parth27/SE_Homework1)
+[![Build Status](https://travis-ci.com/Rohanmestri/SplitUp.svg?branch=master)](https://travis-ci.com/Rohanmestri/SplitUp)
 
 ## App preview video
 
@@ -22,14 +22,21 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 
 ## Why choose this project?
 - [Awsome Tech Stack](#awsome-tech-stack)
-- Clear, Quantifiable and Testable Hypothesis
-- Realistic Roadmap
-- Endless Scope
-- Considerate Pre-requisites
+- [Clear, Quantifiable and Testable Hypothesis](#clear-quantifiable-and-testable-hypothesis)
+- [Realistic Roadmap](#realistic-roadmap)
+- [Endless Scope](#endless-scope)
+- [Considerate Pre-requisites](#considerate-pre-requisites)
 
 ## Awsome Tech Stack
 - In this project we will go through NLP etc.
 
+## Clear, Quantifiable and Testable Hypothesis
+
+## Realistic Roadmap
+
+## Endless Scope
+
+## Considerate Pre-requisites
 
 -This project is suitable for bonus marks because its hypothesis and evaluation are distinct and simple. 
   Hypothesis: As a result of the voice recognition feature, SplitUp is faster at expense recording than
