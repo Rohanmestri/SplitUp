@@ -23,8 +23,8 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 ## Why choose this project?
 - [Awesome Tech Stack](#awesome-tech-stack)
 - [Clear, Quantifiable and Testable Hypothesis](#clear-quantifiable-and-testable-hypothesis)
-- [Endless Scope](#endless-scope)
 - [Considerate Pre-requisites](#considerate-pre-requisites)
+- [Endless Scope](#endless-scope)
 
 ## Awesome Tech Stack
 React Native(Javascript), Python (NLTK, Tensorflow, etc), NLP(entity extraction, voice recognition), REST API, firebase
