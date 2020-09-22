@@ -1,7 +1,6 @@
 ### Requirements for code ###
 pytest
 flask
-re
 nltk
 firebase_admin
 allennlp==1.0.0
