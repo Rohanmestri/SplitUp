@@ -10,7 +10,7 @@ const user = firebase.auth().currentUser;
 let TransactionsList = {};
 let TransactionDict = [];
 
-
+// internally defined functions to handle the group based expenses
 function GroupScreen() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'mediumslateblue'}}>
@@ -19,8 +19,12 @@ function GroupScreen() {
   );
 }
 
+
+// This screen navigates between two halves - one where you see expense owed with friends and in the other you see expenses owed with a group
 const Tab = createBottomTabNavigator();
 
+
+// The main function which handles the navigator by defining the Bottom Tab Navigator
 function Dashboard() {
   return (
       <Tab.Navigator tabBarOptions= {{style: {backgroundColor: 'darkslateblue'}}}>
