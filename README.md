@@ -21,12 +21,12 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 <img src="images/why_us.png" alt="logo" width="150" align="right"/>
 
 ## Why choose this project?
-- [Awsome Tech Stack](#awsome-tech-stack)
+- [Awesome Tech Stack](#awesome-tech-stack)
 - [Clear, Quantifiable and Testable Hypothesis](#clear-quantifiable-and-testable-hypothesis)
 - [Endless Scope](#endless-scope)
 - [Considerate Pre-requisites](#considerate-pre-requisites)
 
-## Awsome Tech Stack
+## Awesome Tech Stack
 React Native(Javascript), python, NLP(entity extraction, voice recognition), REST API, firebase
 
 ## Clear, Quantifiable and Testable Hypothesis
