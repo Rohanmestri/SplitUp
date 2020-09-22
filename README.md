@@ -27,14 +27,6 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 - Endless Scope
 - Considerate Pre-requisites
 
-## A
-## A
-## A
-## A
-## A
-## A
-## A
-
 ## Awsome Tech Stack
 - In this project we will go through NLP etc.
 
