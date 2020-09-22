@@ -22,8 +22,8 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 
 ## Why choose this project?
 - Awsome Tech Stac
-- Clear, quantifiable and testable hypothesis
-- Realistic roadmap
+- Clear, Quantifiable and Testable Hypothesis
+- Realistic Roadmap
 - Endless Scope
 - Considerate Pre-requisites
 
