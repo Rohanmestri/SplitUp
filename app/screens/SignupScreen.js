@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Alert, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Dimensions, Image } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
 import * as firebase from 'firebase';
 
+const {width, height} = Dimensions.get('window');
 
 class SignUpScreen extends Component {
   constructor(props){
@@ -88,7 +89,7 @@ class SignUpScreen extends Component {
           style={styles.loginBtn}
           onPress={() => this.SignUp(this.state.email,this.state.password)}
         >
-          <Text style={styles.loginText}>Sign Up</Text>
+          <Text style={{color: "white"}}>Sign Up</Text>
         </TouchableOpacity>
       </View>
     );
@@ -100,21 +101,27 @@ export default SignUpScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'darkslateblue',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: Math.floor(height/3),
   },
   logo: {
     position:"absolute",
-    top: 50,
+    top: Math.floor(height/7),
     alignItems: "center",
-    width: 150,
-    height: 150
+    width: Math.floor(height/4),
+    height: Math.floor(height/4),
+    borderRadius:25,
+    borderColor:"darkslateblue",
+    borderWidth:1,
   },
   inputView:{
-    width:"80%",
-    backgroundColor:"slateblue",
+    width:"70%",
+    backgroundColor:"white",
     borderRadius:25,
+    borderColor:"darkslateblue",
+    borderWidth:5,
     height:50,
     marginBottom:20,
     justifyContent:"center",
@@ -122,7 +129,7 @@ const styles = StyleSheet.create({
   },
   inputText:{
     height:50,
-    color:"slateblue"
+    color:"darkslateblue"
   },
   forgot:{
     color:"white",
