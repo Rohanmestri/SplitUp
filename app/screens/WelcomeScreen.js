@@ -1,11 +1,13 @@
 import React from  "react";
-import {ImageBackground, Text, View, StyleSheet, Image, TouchableOpacity} from "react-native";
+import {ImageBackground, Text, View, StyleSheet, Image, TouchableOpacity, Dimensions} from "react-native";
 import * as Permissions from "expo-permissions";
+
+const {width, height} = Dimensions.get('window');
 
 
 class WelcomeScreen extends React.Component{
     constructor(props) {
-        super(props)
+        super(props);
     }
 
     getAudioPermission = async() => {
@@ -48,7 +50,7 @@ class WelcomeScreen extends React.Component{
                   <Text style={styles.expenseButtonText2}>View Expenses</Text>
                 </TouchableOpacity>
             </ImageBackground>
-        );
+        )
     }
 }
 
@@ -56,48 +58,57 @@ const styles = StyleSheet.create({
     background:{
         flex:1,
         justifyContent: "flex-end",
-        backgroundColor: 'darkslateblue',
+        backgroundColor: 'white',
         alignItems:"center"
     },
     expenseButton:{
-        width:'100%',
+        width:'80%',
         height: 70,
-        backgroundColor: "mediumslateblue"
+        backgroundColor: "slateblue",
+        borderColor: 'slateblue',
+        borderWidth: 2, 
+        borderRadius: 20,
+        marginBottom: Math.floor(height/80)
     },
     expenseButtonText:{
-        fontFamily: 'serif',
         fontSize:30,
-        color:"darkslateblue",
+        color:"white",
         top: 10,
-        left: 70
+        left: 50
     },
     expenseButton2:{
-        width:'100%',
+        width:'80%',
         height: 70,
-        backgroundColor: "mediumslateblue"
+        backgroundColor: "darkslateblue",
+        borderColor: 'darkslateblue',
+        borderWidth: 2, 
+        borderRadius: 20,
+        marginBottom: Math.floor(height/10)
     },
     expenseButtonText2:{
-        fontFamily: 'serif',
         fontSize:30,
-        color:"darkslateblue",
+        color:"white",
         top: 10,
-        left: 90
+        left: 60
     },
     logo:{
-        width: 250,
-        height:250,
+        width: Math.floor(height/3.5),
+        height: Math.floor(height/3.5),
+        borderColor:'darkslateblue',
+        borderWidth: 2, 
+        borderRadius: 20
     },
 
     logoContainer:{
         position:"absolute",
-        top: 240,
+        top: Math.floor(height/4),
         alignItems: "center"
     },
 
     slogan:{
-        fontFamily: 'serif',
-        fontSize:40,
-        color:"mediumslateblue"
+        fontSize:30,
+        color:"slateblue",
+        fontWeight: "bold"
     }
 });
 

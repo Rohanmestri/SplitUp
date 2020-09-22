@@ -20,11 +20,11 @@ class SignUpScreen extends Component {
   }
 
   LogIn = (email,password) => {
-    //Signing in user after they have created account.
+    //Firebase's signInWithEmailAndPassword function for signing in existing user
     try {
       firebase.auth()
       .signInWithEmailAndPassword(email,password)
-      .then(res => {console.log(res.user.email); this.props.navigation.navigate('LoginScreen');});
+      .then(res => {console.log(res.user.email); this.props.navigation.navigate('WelcomeScreen');});
     } catch (error) {
       console.log(error.toString(error));
     }

@@ -21,6 +21,7 @@ class AddExpense extends React.Component{
             body: JSON.stringify({
                 text: text,
                 user: this.user.uid,
+                userName: this.user.displayName,
             })
         }).then((res) => res.json)
         .catch(error => console.log(error))
