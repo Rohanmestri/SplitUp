@@ -28,8 +28,7 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
  - (The technologies and tools that we have used are very popular and sought after in the industry)
  - (System Design statement: A clear design statement about architecture/framework)
  
- ## TO DO list
- (make a list of all the issues that are yet to be addressed and elaborate a little on each task)
+
 
 ## Setup Instructions
 
