@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from nltk.stem.snowball import SnowballStemmer
 from nltk.tokenize import word_tokenize
 import nltk
