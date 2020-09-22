@@ -26,10 +26,10 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 - [Considerate Pre-requisites](#considerate-pre-requisites)
 - [Endless Scope](#endless-scope)
 
-## Awesome Tech Stack
+### Awesome Tech Stack
 React Native(Javascript), Python (NLTK, Flask, Tensorflow, etc), NLP(entity extraction, voice recognition), REST API, firebase
 
-## Clear, Quantifiable and Testable Hypothesis
+### Clear, Quantifiable and Testable Hypothesis
  Hypothesis: As a result of the voice recognition feature, SplitUp is faster at expense recording than
  any other apps currently in the market.
  
@@ -38,11 +38,11 @@ React Native(Javascript), Python (NLTK, Flask, Tensorflow, etc), NLP(entity extr
  Qualtitative evaluation: We will also conduct a feedback survey to record their experiences with our app vs. other similar apps.
 
 
-## Considerate Pre-requisites
+### Considerate Pre-requisites
 This project only requires basic knowledge of various fields described below. One can easily catch up in no time.
 The database is implemented in firebase which has super easy integration APIs for application creation. We have already created some query functions which can be modified to retrieve different pieces of data from firebase database. Apart from this, having a basic knowledge of NLP concepts like entity extraction, POS tagging is enough to continue this project.
 
-## Endless Scope
+### Endless Scope
 Currently, we are using google keyboard microphone to retrieve text from voice. One major scope for improvement is converting this project from Expo to pure React Native. This will allow you to use several Speech to Text APIs like react native voice, IBM Watson Speech-to-Text and so on.
 
 Information extraction from text is a very popular field in NLP, with new advancements happening everyday. Our software currently handles processing of simple transactions involving a single participant and keyword based expense matching, and has a lot of room for innovation and improvement.
