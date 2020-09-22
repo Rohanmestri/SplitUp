@@ -1,7 +1,7 @@
 # SplitUp
 An expense splitting hybrid app powered by Natural Language Processing. The app is developed using React Native with Expo. 
 
-![logo](logo.jpeg)
+<img src="logo.jpeg" alt="logo" width="250"/>
 
 
 When voice assistants began to emerge in 2011 with the introduction of Siri, no one could have predicted that this novelty would become a driver for tech innovation. The growth in the speech and voice recognition market can be attributed to the rising acceptance of advanced technology together with increasing consumer demand for smart devices. 
