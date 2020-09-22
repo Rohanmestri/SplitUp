@@ -54,6 +54,12 @@ Information extraction from text is a very popular field in NLP, with new advanc
 
 ## Setup Instructions
 
-1) Download repo
-2) Go to SplitUp/app directory and run 'npm install' (This will install all react native dependencies required for the app)
-3) Run expo using 'npm start' or 'expo start'
+1) Install [npm](https://www.npmjs.com/get-npm)
+2) Install [expo](https://docs.expo.io/get-started/installation/)
+3) Download this repository
+4) Run 'pip install -r requirements.txt' from SplitUp directory.
+5) Go to SplitUp/app directory and run 'npm install' (This will install all react native dependencies required for the app)
+6) Create a web app on firebase console and add your app's API credentials in SplitUp/app/firebase/config.js
+7) On firebase console, go to Project settings -> Service Accounts -> Python SDK and generate a new private key. Rename the downloaded json file 'config.json' and place it in SplitUp/SplitUpServer directory.
+8) Start server by going to SplitUp/SplitUpServer and running 'python Server.py'
+9) Start app by going to SplitUp/app and running 'npm start' or 'expo start'
