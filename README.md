@@ -23,30 +23,33 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 ## Why choose this project?
 - [Awsome Tech Stack](#awsome-tech-stack)
 - [Clear, Quantifiable and Testable Hypothesis](#clear-quantifiable-and-testable-hypothesis)
-- [Realistic Roadmap](#realistic-roadmap)
 - [Endless Scope](#endless-scope)
 - [Considerate Pre-requisites](#considerate-pre-requisites)
 
 ## Awsome Tech Stack
-- In this project we will go through NLP etc.
+React Native(Javascript), python, NLP(entity extraction, voice recognition), REST API, firebase
 
 ## Clear, Quantifiable and Testable Hypothesis
+ Hypothesis: As a result of the voice recognition feature, SplitUp is faster at expense recording than
+ any other apps currently in the market.
+ Evaluation: To evaluate this hypothesis, we will conduct a time analysis on users and calculate the average 
+ time it takes for a user to add the same information in both of these apps. We will also conduct a 
+ feedback survey to record their experiences with our app vs. other similar apps.
 
-## Realistic Roadmap
 
 ## Endless Scope
 
 ## Considerate Pre-requisites
+This project requires just basic knowledge of various fields described below. One can easily catch up in no time.
+The database is implemented in firebase which has super easy integration APIs for application creation. The database defining is also very simple.
+We have already created some query functions which can be modified to retrieve different pieces of data from firebase database.
 
--This project is suitable for bonus marks because its hypothesis and evaluation are distinct and simple. 
-  Hypothesis: As a result of the voice recognition feature, SplitUp is faster at expense recording than
-  any other apps currently in the market.
-  Evaluation: To evaluate this hypothesis, we will conduct a time analysis on users and calculate the average
-  time it takes for a user to add the same information in both of these apps. We will also conduct a
-  feedback survey to record their experiences with our app vs. other similar apps.
- - (The technologies and tools that we have used are very popular and sought after in the industry)
- - (System Design statement: A clear design statement about architecture/framework)
+We are using google keyboard mike to retrieve text from voice. Further basic python functions take care of relavant information extraction from these texts.
+We will provide well documented link to help you at each step.
  
+ ## Current Progress
+ 
+ [![demo video](https://img.youtube.com/vi/wTju8pgBZNo/0.jpg)](https://youtu.be/wTju8pgBZNo)
 
 
 ## Setup Instructions
