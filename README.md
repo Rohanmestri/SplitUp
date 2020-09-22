@@ -32,21 +32,21 @@ React Native(Javascript), python, NLP(entity extraction, voice recognition), RES
 ## Clear, Quantifiable and Testable Hypothesis
  Hypothesis: As a result of the voice recognition feature, SplitUp is faster at expense recording than
  any other apps currently in the market.
- Evaluation: To evaluate this hypothesis, we will conduct a time analysis on users and calculate the average 
- time it takes for a user to add the same information in both of these apps. We will also conduct a 
- feedback survey to record their experiences with our app vs. other similar apps.
+ 
+ Evaluation: To evaluate this hypothesis, we will conduct a time analysis on users and calculate the average time it takes for a user to add the same information in both of these apps. Computing this average over a sample of users would be an accurate way to test our hypothesis.
+ 
+ Qualtitative evaluation: We will also conduct a feedback survey to record their experiences with our app vs. other similar apps.
 
-
-## Endless Scope
 
 ## Considerate Pre-requisites
-This project requires just basic knowledge of various fields described below. One can easily catch up in no time.
-The database is implemented in firebase which has super easy integration APIs for application creation. The database defining is also very simple.
-We have already created some query functions which can be modified to retrieve different pieces of data from firebase database.
+This project only requires basic knowledge of various fields described below. One can easily catch up in no time.
+The database is implemented in firebase which has super easy integration APIs for application creation. We have already created some query functions which can be modified to retrieve different pieces of data from firebase database. Apart from this, having a basic knowledge of NLP concepts like entity extraction, POS tagging is enough to continue this project.
 
-We are using google keyboard mike to retrieve text from voice. Further basic python functions take care of relavant information extraction from these texts.
-We will provide well documented link to help you at each step.
- 
+## Endless Scope
+Currently, we are using google keyboard microphone to retrieve text from voice. One major scope for improvement is converting this project from Expo to pure React Native. This will allow you to use several Speech to Text APIs like react native voice, IBM Watson Speech-to-Text and so on.
+
+Information extraction from text is a very popular field in NLP, with new advancements happening everyday. Our software currently handles processing of simple transactions involving a single participant and keyword based expense matching, and has a lot of room for innovation and improvement.
+
  ## Current Progress
  
  [![demo video](https://img.youtube.com/vi/wTju8pgBZNo/0.jpg)](https://youtu.be/wTju8pgBZNo)
