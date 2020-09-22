@@ -21,11 +21,15 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 <img src="images/why_us.png" alt="logo" width="150" align="right"/>
 
 ## Why choose this project?
-- Awsome Tech Stac
+- [Awsome Tech Stack](#markdown-header-Awsome-Tech-Stack)
 - Clear, Quantifiable and Testable Hypothesis
 - Realistic Roadmap
 - Endless Scope
 - Considerate Pre-requisites
+
+## Awsome Tech Stack
+In this project we will go through NLP etc.
+
 
 -This project is suitable for bonus marks because its hypothesis and evaluation are distinct and simple. 
   Hypothesis: As a result of the voice recognition feature, SplitUp is faster at expense recording than
