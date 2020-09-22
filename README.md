@@ -1,5 +1,13 @@
 # SplitUp
-An expense splitting hybrid app powered by Natural Language Processing. The app is developed using React Native with Expo.
+An expense splitting hybrid app powered by Natural Language Processing. The app is developed using React Native with Expo. 
+
+(add SplitUp logo)
+
+
+When voice assistants began to emerge in 2011 with the introduction of Siri, no one could have predicted that this novelty would become a driver for tech innovation. The growth in the speech and voice recognition market can be attributed to the rising acceptance of advanced technology together with increasing consumer demand for smart devices. 
+This motivated us to build our app, SplitUp. SplitUp enables you to keep track of your expenses and loans without actually having to save a heap of bills to put this information in the app. It does all this on the go just at the command of your voice. 
+
+
 
 ![MIT license](https://img.shields.io/github/license/Rohanmestri/SplitUp)
 ![Issues](https://img.shields.io/github/issues/Rohanmestri/SplitUp?logo=github)
@@ -9,6 +17,19 @@ An expense splitting hybrid app powered by Natural Language Processing. The app 
 [![SplitUP](https://img.youtube.com/vi/BdBLGMfhgiI/0.jpg)](https://youtu.be/BdBLGMfhgiI)
 
 ![views](https://img.shields.io/youtube/views/BdBLGMfhgiI?style=social)
+
+## Why choose this project?
+- This project is suitable for bonus marks because its hypothesis and evaluation are distinct and simple. 
+  Hypothesis: As a result of the voice recognition feature, SplitUp is faster at expense recording than
+  any other apps currently in the market.
+  Evaluation: To evaluate this hypothesis, we will conduct a time analysis on users and calculate the average
+  time it takes for a user to add the same information in both of these apps. We will also conduct a
+  feedback survey to record their experiences with our app vs. other similar apps.
+ - (The technologies and tools that we have used are very popular and sought after in the industry)
+ - (System Design statement: A clear design statement about architecture/framework)
+ 
+ ## TO DO list
+ (make a list of all the issues that are yet to be addressed and elaborate a little on each task)
 
 ## Setup Instructions
 
