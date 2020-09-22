@@ -2,15 +2,17 @@ import * as firebase from 'firebase';
 import '@firebase/auth';
 import '@firebase/firestore';
 
+// Add credentials provided by firebase after creating a firebase web app here
+
 const firebaseConfig = {
-    apiKey: "AIzaSyBstJDkLyQh1QYnwBAD8LWS6CMLyg3zO00",
-    authDomain: "splitupdb.firebaseapp.com",
-    databaseURL: "https://splitupdb.firebaseio.com",
-    projectId: "splitupdb",
-    storageBucket: "splitupdb.appspot.com",
-    messagingSenderId: "661161791622",
-    appId: "1:661161791622:web:6dae9a4c3384ddd0cb4107",
-    measurementId: "G-6XZGSQ9ENR"
+    apiKey: "Enter API Key",
+    authDomain: "Enter authDomain details",
+    databaseURL: "Enter database URL details",
+    projectId: "Project ID",
+    storageBucket: "Storage bucket",
+    messagingSenderId: "--",
+    appId: "--",
+    measurementId: "--"
   };
 
 if (!firebase.apps.length) {
