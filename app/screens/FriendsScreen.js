@@ -3,9 +3,10 @@ import { Text, View, StyleSheet, FlatList, Dimensions } from 'react-native';
 import {ListItem} from 'react-native-elements';
 import firebase from '../firebase/config';
 
+// Get the dimensions of the phone model to set the UI according to the model
 const {width, height} = Dimensions.get('window');
 
-
+// Define the Screen which shows a list of friends and how much money they/you owe
 class FriendsScreen extends React.Component {
     state = {
         Transactions: [],
@@ -15,9 +16,13 @@ class FriendsScreen extends React.Component {
         super(props);
     }
 
+    // Get the Firebase ID for the current user signed in, 
+    // so that we are able to lookup his/her transaction in the Firebase DB.
     DB = firebase.database();
     user = firebase.auth().currentUser;
 
+    // Create a dictionary of all the friends associated
+    // With a net amount owed to each friend as 0.
     fetchData = (classobj) => {
         this.DB.ref('/'+this.user.uid+'/Friends').once('value',function(snapshot) {
             snapshot.forEach(function(childSnapshot) {
@@ -27,6 +32,8 @@ class FriendsScreen extends React.Component {
         })
     }
 
+    // Parse over each transaction made by this user to his/her friends
+    // Sum up the value for each friends and what you or he/she owes
     fetchTransactions = (classobj) => {
         this.DB.ref('/'+this.user.uid+'/Transactions').once('value',function(snapshot) {
             snapshot.forEach(function(childSnapshot) {
@@ -51,6 +58,7 @@ class FriendsScreen extends React.Component {
         this.fetchTransactions(this);
     }
 
+    // Render this Screen with a list of each of the user's friends and the amount owed
     render() {
         return (
             <View style={{flex: 1}}>
@@ -94,6 +102,7 @@ class FriendsScreen extends React.Component {
     }
 }
 
+// Create a StyleSheet for the container
 const styles = StyleSheet.create({
     background:{
         justifyContent: "center",
@@ -103,6 +112,7 @@ const styles = StyleSheet.create({
 });
 
 
+// Create the Stylesheet for the List Item
 const friends_styles = StyleSheet.create ({
     header: {
         flex: 1,
