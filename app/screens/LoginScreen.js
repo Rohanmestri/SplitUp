@@ -6,9 +6,11 @@ import {WelcomeScreen} from '../screens/WelcomeScreen'
 import firebase from '../firebase/config';
 
 
+// Get the dimensions of the phone model to set the UI specific to the model
 const {width, height} = Dimensions.get('window');
 
 
+// Define the Class for the Login Screen
 class LoginScreen extends Component {
   constructor(props){
     super(props);
@@ -21,6 +23,8 @@ class LoginScreen extends Component {
     headerShown: false
   }
 
+  // To accept the login with the credentials present in the database.
+  // If user not signed up, throw an exception
   LogIn = (email,password) => {
     //Firebase's signInWithEmailAndPassword function for signing in existing user
     try {
@@ -32,6 +36,7 @@ class LoginScreen extends Component {
     }
   }
 
+  // Render the UI
   render(){
     return (
       <View style={styles.container}>
@@ -73,6 +78,7 @@ class LoginScreen extends Component {
 
 export default LoginScreen;
 
+// Define the Stylesheet for the UI of this screen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
