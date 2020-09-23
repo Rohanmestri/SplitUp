@@ -3,8 +3,10 @@ import { StyleSheet, Text, View, TouchableOpacity, Dimensions, Image } from 'rea
 import { TextInput } from 'react-native-gesture-handler';
 import * as firebase from 'firebase';
 
+// Get the dimensions of the phone model to set the UI according to the specific model.
 const {width, height} = Dimensions.get('window');
 
+// Define the class for the Signup Screen
 class SignUpScreen extends Component {
   constructor(props){
     super(props);
@@ -46,6 +48,8 @@ class SignUpScreen extends Component {
       console.log(error.toString(error));
     }
   }
+  
+  // Render the UI
   render(){
     return (
       <View style={styles.container}>
@@ -98,6 +102,7 @@ class SignUpScreen extends Component {
 
 export default SignUpScreen;
 
+// Create the Stylesheet for the UI of this screen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
