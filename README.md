@@ -11,6 +11,7 @@ This motivated us to build our app, SplitUp. SplitUp enables you to keep track o
 ![MIT license](https://img.shields.io/github/license/Rohanmestri/SplitUp)
 ![Issues](https://img.shields.io/github/issues/Rohanmestri/SplitUp?logo=github)
 [![Build Status](https://travis-ci.com/Rohanmestri/SplitUp.svg?branch=master)](https://travis-ci.com/Rohanmestri/SplitUp)
+[![DOI](https://zenodo.org/badge/295597304.svg)](https://zenodo.org/badge/latestdoi/295597304)
 
 ## App preview video
 
